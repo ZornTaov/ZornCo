@@ -13,7 +13,6 @@ namespace Website.ViewComponents
 {
     public class MenuBarViewComponent : ViewComponent
     {
-        private readonly IWebHostEnvironment _env;
         public readonly List<ProjectJson> projects;
         public MenuBarViewComponent()
         {
