@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  zornco-site:
+    build: Website
+    image: zornco-site
+    ports:
+      - "80:80"
