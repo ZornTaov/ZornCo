@@ -1,5 +1,16 @@
-﻿@{
+﻿@model Website.Json.ProjectJson
+
+@{
     ViewData["Title"] = "Projects";
 }
-<h1>Viewing Project: @ViewBag.ProjectID</h1>
-<p>Test</p>
+<h1>Viewing Project: @Model.Name</h1>
+<h3>Semester made: @Model.Semester</h3>
+@foreach (string item in Model.Images)
+{
+<img src="~/Content/images/myimage.png" />
+    <br />
+}
+<h2>About:</h2>
+<p>@Model.About</p>
+<h2>What I Worked on:</h2>
+<p>@Model.WhatIDid</p>

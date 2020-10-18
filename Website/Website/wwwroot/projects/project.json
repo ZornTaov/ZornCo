@@ -1,0 +1,10 @@
+[
+  {
+    "id": "Project1",
+    "name": "Project of 1",
+    "images": [ "project1.png","project2.png" ],
+    "semester": "FA 2020",
+    "about": "This is my first project to test with.",
+    "whatidid": "This is what I did."
+  }
+]
