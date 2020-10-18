@@ -45,3 +45,8 @@ testem.log
 .DS_Store
 Thumbs.db
 /Website/Website/obj
+
+# Visual Studio
+.vs/
+bin/
+obj/
