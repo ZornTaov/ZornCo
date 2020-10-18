@@ -14,6 +14,8 @@ namespace Website.Json
         public string Name;
         [JsonProperty("images")]
         public string[] Images;
+        [JsonProperty("youtube")]
+        public string Youtube;
         [JsonProperty("semester")]
         public string Semester;
         [JsonProperty("about")]

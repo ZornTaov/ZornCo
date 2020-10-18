@@ -6,7 +6,9 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
-
+.bg-header {
+    background-color: #00a658 !important;
+}
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;

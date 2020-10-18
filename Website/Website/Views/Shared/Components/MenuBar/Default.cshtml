@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<Website.Json.ProjectJson>
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-header border-bottom box-shadow mb-3">
+    <div class="container">
+        <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">ZornCo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle nav-link text-light" data-toggle="dropdown" href="#">
+                        Unity Projects
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        @foreach (var item in Model)
+                        {
+                            <li class="nav-item">
+                                @Html.ActionLink(item.Name, actionName: "Project", controllerName: "Home", new
+                                   {
+                                       id = item.Id
+                                   }, htmlAttributes: new
+                                   {
+                                       @class = "nav-link text-dark"
+                                   })
+                            </li>
+                        }
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

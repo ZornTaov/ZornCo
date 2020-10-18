@@ -21,7 +21,7 @@ namespace Website.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IWebHostEnvironment _env;
-        private readonly List<ProjectJson> projects;
+        public static List<ProjectJson> projects;
         public HomeController(ILogger<HomeController> logger, IWebHostEnvironment env)
         {
             _logger = logger;
@@ -32,10 +32,9 @@ namespace Website.Controllers
                 projects = JsonConvert.DeserializeObject<List<ProjectJson>>(sr.ReadToEnd());
             }
         }
-
         public IActionResult Index()
         {
-            ViewBag.Hello = "Hi!";
+            //ViewBag.Hello = "Hi!";
             return View();
         }
 

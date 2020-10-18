@@ -1,10 +1,20 @@
 [
   {
-    "id": "Project1",
-    "name": "Project of 1",
-    "images": [ "project1.png","project2.png" ],
-    "semester": "FA 2020",
-    "about": "This is my first project to test with.",
+    "id": "MechaBashBattle",
+    "name": "Mecha Bash Battle",
+    "images": [],
+    "youtube": "PMZinsavqCE",
+    "semester": "FA 2017",
+    "about": "A game based around modular fighting robots made for the Game Design 2 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
     "whatidid": "This is what I did."
+  },
+  {
+    "id": "UnderMaintenence",
+    "name": "Under Maintenence",
+    "images": [ "projects/hands.png", "projects/Minigame 1.png" ],
+    "youtube": "KtvMWNtB8Pg",
+    "semester": "FA 2018-SP 2019",
+    "about": "This VR game was made for Stanford Childerens Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked on it together.",
+    "whatidid": "I worked on it as an Engineer and I created most of the first Minigame and I worked on the movement and interaction systems."
   }
 ]

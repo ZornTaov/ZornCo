@@ -5,10 +5,17 @@
 }
 <h1>Viewing Project: @Model.Name</h1>
 <h3>Semester made: @Model.Semester</h3>
+@if (Model.Youtube != null && Model.Youtube != "")
+{
+    <div class="iframe-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/@Model.Youtube"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+}
+<h2>Images:</h2>
 @foreach (string item in Model.Images)
 {
-<img src="~/Content/images/myimage.png" />
-    <br />
+    <img src="~/@item" height="300px" />
 }
 <h2>About:</h2>
 <p>@Model.About</p>
