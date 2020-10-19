@@ -20,36 +20,14 @@ namespace Website.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IWebHostEnvironment _env;
-        public static List<ProjectJson> projects;
-        public HomeController(ILogger<HomeController> logger, IWebHostEnvironment env)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _env = env;
-
-            using (StreamReader sr = new StreamReader(Path.Combine(_env.WebRootPath, "projects/project.json")))
-            {
-                projects = JsonConvert.DeserializeObject<List<ProjectJson>>(sr.ReadToEnd());
-            }
         }
         public IActionResult Index()
         {
             //ViewBag.Hello = "Hi!";
             return View();
-        }
-
-        [Route("project/{id}")]
-        public IActionResult Project(string id)
-        {
-            var projectvar = from f in projects where f.Id == id select f;
-            ProjectJson project = projectvar.FirstOrDefault();
-            if (project == null)
-            {
-                //TODO: Redirect to "project not found" page
-                return RedirectToAction(actionName: nameof(Index));
-            }
-
-            return View(project);
         }
 
         [Route("error")]

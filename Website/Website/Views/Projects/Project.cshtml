@@ -1,0 +1,58 @@
+﻿@model Website.Json.Project
+
+@{
+    ViewData["Title"] = "Projects";
+}
+<h1>Viewing Project: @Model.Name</h1>
+<h3>Semester made: @Model.Semester</h3>
+@if (Model.Youtube != null && Model.Youtube != "")
+{
+    <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/@Model.Youtube"
+                allow="autoplay; encrypted-media" allowfullscreen style="height: 20em; width:100%"></iframe>
+    </div>
+}
+@if (Model.Images.Length > 0)
+{
+    <h2>Images:</h2>
+    <div class="container" style="background:#333">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                @for (int i = 0; i < Model.Images.Length; i++)
+                {
+                    @if (i == 0)
+                    {
+                        <li data-target="#myCarousel" data-slide-to="@i" class="active"></li>
+                    }
+                    else
+                    {
+                        <li data-target="#myCarousel" data-slide-to="@i"></li>
+                    }
+                }
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                @for (int i = 0; i < Model.Images.Length; i++)
+                {
+                    <div class="@(i == 0 ? "carousel-item active" : "carousel-item")">
+                        <div style="display:flex; justify-content:center">
+                            <img src="~/@Model.Images[i]" alt="@Model.Images[i].Replace(".png", "")" style="height: 20em;" class="d-block" />
+                        </div>
+                    </div>
+                }
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+}
+<h2>About:</h2>
+<p>@Model.About</p>
+<h2>What I Worked on:</h2>
+<p>@Model.WhatIDid</p>

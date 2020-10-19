@@ -1,20 +1,56 @@
-[
-  {
-    "id": "MechaBashBattle",
-    "name": "Mecha Bash Battle",
-    "images": [],
-    "youtube": "PMZinsavqCE",
-    "semester": "FA 2017",
-    "about": "A game based around modular fighting robots made for the Game Design 2 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
-    "whatidid": "This is what I did."
-  },
-  {
-    "id": "UnderMaintenence",
-    "name": "Under Maintenence",
-    "images": [ "projects/hands.png", "projects/Minigame 1.png" ],
-    "youtube": "KtvMWNtB8Pg",
-    "semester": "FA 2018-SP 2019",
-    "about": "This VR game was made for Stanford Childerens Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked on it together.",
-    "whatidid": "I worked on it as an Engineer and I created most of the first Minigame and I worked on the movement and interaction systems."
-  }
-]
+{
+  "unity": [
+    {
+      "id": "MechaBashBattle",
+      "name": "Mecha Bash Battle",
+      "images": [],
+      "youtube": "PMZinsavqCE",
+      "semester": "FA 2017",
+      "about": "A game based around modular fighting robots made for the Game Design 2 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
+      "whatidid": "This is what I did."
+    }
+  ],
+  "unreal": [
+    {
+      "id": "UnderMaintenence",
+      "name": "Under Maintenence",
+      "images": [ "projects/hands.png", "projects/Minigame 1.png" ],
+      "youtube": "KtvMWNtB8Pg",
+      "semester": "FA 2018-SP 2019",
+      "about": "This VR game was made for Stanford Childerens Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked on it together.",
+      "whatidid": "I worked on it as an Engineer and I created most of the first Minigame and I worked on the movement and interaction systems."
+    }
+  ],
+  "minecraft": [
+    {
+      "id": "Hykkota Launcher",
+      "name": "",
+      "images": [],
+      "youtube": "",
+      "semester": "2013",
+      "about": "",
+      "whatidid": ""
+    }
+  ],
+  "other": [
+    {
+      "id": "PoolGame",
+      "name": "Basic Pool Game",
+      "images": [],
+      "youtube": "",
+      "semester": "FA 2019",
+      "about": "",
+      "whatidid": ""
+    },
+    {
+      "id": "Zirc",
+      "name": "Basic Pool Game",
+      "images": [],
+      "youtube": "",
+      "semester": "FA 2019",
+      "about": "",
+      "whatidid": ""
+    }
+
+  ]
+}

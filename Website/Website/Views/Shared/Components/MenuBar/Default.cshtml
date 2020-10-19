@@ -1,7 +1,31 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@model List<Website.Json.ProjectJson>
+@model Website.Json.Projects
+
+@{
+    void GenProjectsTab(string title, Website.Json.Project[] projects)
+    {
+        <li class="dropdown">
+            <a class="dropdown-toggle nav-link text-light" data-toggle="dropdown" href="#">@title<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+
+                @foreach (var item in projects)
+                {
+                    <li class="nav-item">
+                        @Html.ActionLink(item.Name, actionName: title, controllerName: "Projects", new
+                           {
+                               id = item.Id
+                           }, htmlAttributes: new
+                           {
+                               @class = "nav-link text-dark"
+                           })
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+}
 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-header border-bottom box-shadow mb-3">
     <div class="container">
         <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">ZornCo</a>
@@ -14,26 +38,8 @@
                 <li class="nav-item">
                     <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle nav-link text-light" data-toggle="dropdown" href="#">
-                        Unity Projects
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        @foreach (var item in Model)
-                        {
-                            <li class="nav-item">
-                                @Html.ActionLink(item.Name, actionName: "Project", controllerName: "Home", new
-                                   {
-                                       id = item.Id
-                                   }, htmlAttributes: new
-                                   {
-                                       @class = "nav-link text-dark"
-                                   })
-                            </li>
-                        }
-                    </ul>
-                </li>
+                @{ GenProjectsTab("Unity", Model.Unity);}
+                @{ GenProjectsTab("Unreal", Model.Unreal);}
             </ul>
         </div>
     </div>

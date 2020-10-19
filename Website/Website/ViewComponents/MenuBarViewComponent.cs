@@ -13,14 +13,15 @@ namespace Website.ViewComponents
 {
     public class MenuBarViewComponent : ViewComponent
     {
-        public readonly List<ProjectJson> projects;
-        public MenuBarViewComponent()
+        private readonly Projects p;
+        public MenuBarViewComponent(Projects p)
         {
-
+            this.p = p;
         }
-        public IViewComponentResult Invoke(int numberOfItems)
+        public IViewComponentResult Invoke()
         {
-            return View(HomeController.projects);
+            //TODO: add image/youtube badges to nav-item
+            return View(this.p);
         }
     }
 }

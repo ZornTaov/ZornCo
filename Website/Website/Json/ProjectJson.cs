@@ -6,7 +6,18 @@ using Newtonsoft.Json;
 namespace Website.Json
 {
     [JsonObject]
-    public class ProjectJson
+    public class Projects
+    {
+        [JsonProperty("unity")]
+        public Project[] Unity;
+        [JsonProperty("unreal")]
+        public Project[] Unreal;
+    }
+
+
+
+    [JsonObject]
+    public class Project
     {
         [JsonProperty("id")]
         public string Id;
