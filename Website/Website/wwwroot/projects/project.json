@@ -48,6 +48,24 @@
       "semester": "2013",
       "about": "Custom Minecraft Launcher written in C#.",
       "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft."
+    },
+    {
+      "id": "BedcraftandBeyond",
+      "name": "Bedcraft and Beyond",
+      "images": [
+        "projects/bcb/BCB.png",
+        "projects/bcb/BCB_Types.png",
+        "projects/bcb/beds_underside.png",
+        "projects/bcb/RainbowBeds.gif",
+        "projects/bcb/StoneBed.png",
+        "projects/bcb/rugs_variations.png",
+        "projects/bcb/Suitcase.jpg",
+        "projects/bcb/suitcase_recipe.png"
+      ],
+      "youtube": "",
+      "semester": "2013",
+      "about": "This mod introduced modular rugs that could go up and down the sides of slabs, stairs, and full blocks for a connected rug look.  Also included were beds that had three levels of customization: the sheets, the blanket, and the frame itself could be customized depending on materials and dyes used. Made deprecated with Minecraft 1.12 as both carpets and colored beds were in the vanilla game.",
+      "whatidid": ""
     }
   ],
   "other": [
