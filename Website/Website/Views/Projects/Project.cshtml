@@ -48,7 +48,9 @@ else if (Model.Images.Length > 1)
                 {
                     <div class="@(i == 0 ? "carousel-item active" : "carousel-item")">
                         <div style="display:flex; justify-content:center">
-                            <img src="~/@Model.Images[i]" alt="@Model.Images[i].Replace(".png", "")" style="height: 20em;" class="d-block" />
+                            <a href="~/@Model.Images[i]" data-toggle="lightbox">
+                                <img src="~/@Model.Images[i]" alt="@Model.Images[i].Replace(".png", "")" style="height: 20em;" class="d-block img-fluid" />
+                            </a>
                         </div>
                     </div>
                 }
