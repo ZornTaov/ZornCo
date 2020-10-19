@@ -12,7 +12,18 @@
                 allow="autoplay; encrypted-media" allowfullscreen style="height: 20em; width:100%"></iframe>
     </div>
 }
-@if (Model.Images.Length > 0)
+
+@if (Model.Images.Length == 1)
+{
+    <h2>Images:</h2>
+    <div class="container" style="background:#333">
+        <div style="display:flex; justify-content:center">
+            <img src="~/@Model.Images[0]" alt="@Model.Images[0].Replace(".png", "")" class="d-block" />
+        </div>
+    </div>
+
+}
+else if (Model.Images.Length > 1)
 {
     <h2>Images:</h2>
     <div class="container" style="background:#333">

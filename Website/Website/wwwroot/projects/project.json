@@ -43,7 +43,7 @@
     {
       "id": "HykkotaLauncher",
       "name": "Hykkota Launcher",
-      "images": [],
+      "images": [ "projects/hykkota-1.png", "projects/hykkota-2.png" ],
       "youtube": "",
       "semester": "2013",
       "about": "Custom Minecraft Launcher written in C#.",
@@ -63,9 +63,9 @@
     {
       "id": "Zirc",
       "name": "Zirc",
-      "images": [],
+      "images": [ "projects/Zirc.png" ],
       "youtube": "",
-      "semester": "FA 2019",
+      "semester": "2015",
       "about": "Basic C#+Lua based IRC client.",
       "whatidid": ""
     }
