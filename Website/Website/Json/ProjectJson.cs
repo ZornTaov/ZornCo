@@ -12,6 +12,10 @@ namespace Website.Json
         public Project[] Unity;
         [JsonProperty("unreal")]
         public Project[] Unreal;
+        [JsonProperty("minecraft")]
+        public Project[] Minecraft;
+        [JsonProperty("other")]
+        public Project[] Other;
     }
 
 

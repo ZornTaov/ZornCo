@@ -31,11 +31,9 @@ namespace Website
             services.AddRazorPages()
                 .AddRazorRuntimeCompilation();
 
-            using (StreamReader sr = new StreamReader(Path.Combine(_env.WebRootPath, "projects/project.json")))
-            {
-                Projects projects = JsonConvert.DeserializeObject<Projects>(sr.ReadToEnd());
-                services.AddSingleton(projects);
-            }
+            using StreamReader sr = new StreamReader(Path.Combine(_env.WebRootPath, "projects/project.json"));
+            Projects projects = JsonConvert.DeserializeObject<Projects>(sr.ReadToEnd());
+            services.AddSingleton(projects);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

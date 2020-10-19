@@ -8,6 +8,15 @@
       "semester": "FA 2017",
       "about": "A game based around modular fighting robots made for the Game Design 2 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
       "whatidid": "This is what I did."
+    },
+    {
+      "id": "RuinedMazeRunner",
+      "name": "Ruined Maze Runner",
+      "images": [],
+      "youtube": "dk0CzvgunWE",
+      "semester": "FA 2017",
+      "about": "A game based around a maze generator of my own design made for the Level Design 1 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
+      "whatidid": "This is what I did."
     }
   ],
   "unreal": [
@@ -19,36 +28,45 @@
       "semester": "FA 2018-SP 2019",
       "about": "This VR game was made for Stanford Childerens Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked on it together.",
       "whatidid": "I worked on it as an Engineer and I created most of the first Minigame and I worked on the movement and interaction systems."
+    },
+    {
+      "id": "Harmegeddon",
+      "name": "Harmegeddon",
+      "images": [ ],
+      "youtube": "",
+      "semester": "SU 2020",
+      "about": "Arcade Battle Racing game",
+      "whatidid": "Engineer lead, directed others"
     }
   ],
   "minecraft": [
     {
-      "id": "Hykkota Launcher",
-      "name": "",
+      "id": "HykkotaLauncher",
+      "name": "Hykkota Launcher",
       "images": [],
       "youtube": "",
       "semester": "2013",
-      "about": "",
-      "whatidid": ""
+      "about": "Custom Minecraft Launcher written in C#.",
+      "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft."
     }
   ],
   "other": [
     {
       "id": "PoolGame",
       "name": "Basic Pool Game",
-      "images": [],
+      "images": ["projects/GnG Final Preview.png"],
       "youtube": "",
       "semester": "FA 2019",
-      "about": "",
+      "about": "Basic 3d pool game using Three.JS",
       "whatidid": ""
     },
     {
       "id": "Zirc",
-      "name": "Basic Pool Game",
+      "name": "Zirc",
       "images": [],
       "youtube": "",
       "semester": "FA 2019",
-      "about": "",
+      "about": "Basic C#+Lua based IRC client.",
       "whatidid": ""
     }
 

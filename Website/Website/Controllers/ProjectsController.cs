@@ -40,5 +40,17 @@ namespace Website.Controllers
         {
             return GetProjectView(p.Unity, id);
         }
+
+        [Route("minecraft/{id}")]
+        public IActionResult Minecraft(string id)
+        {
+            return GetProjectView(p.Minecraft, id);
+        }
+
+        [Route("other/{id}")]
+        public IActionResult Other(string id)
+        {
+            return GetProjectView(p.Other, id);
+        }
     }
 }
