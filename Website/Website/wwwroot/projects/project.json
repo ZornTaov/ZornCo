@@ -65,6 +65,17 @@
       "youtube": "",
       "semester": "2013",
       "about": "This mod introduced modular rugs that could go up and down the sides of slabs, stairs, and full blocks for a connected rug look.  Also included were beds that had three levels of customization: the sheets, the blanket, and the frame itself could be customized depending on materials and dyes used. Made deprecated with Minecraft 1.12 as both carpets and colored beds were in the vanilla game.",
+      "whatidid": "",
+      "speciallink": "https://www.curseforge.com/minecraft/mc-mods/bed-craft-and-beyond",
+      "sourcelink": "https://github.com/ZornTaov/BedcraftAndBeyond"
+    },
+    {
+      "id": "MegaX",
+      "name": " Megaman X Mod",
+      "images": [],
+      "youtube": "",
+      "semester": "2013",
+      "about": "This mod was based on different aspects of the Megaman X series. Before discontinuing development of the mod, I was able to implement colorable armor and weapons, a buster that could be charged up and fired, a item stand, and a modular ride armor system.<br> <br> The ride armor system was the ",
       "whatidid": ""
     }
   ],

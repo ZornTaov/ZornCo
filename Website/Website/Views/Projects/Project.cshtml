@@ -67,6 +67,18 @@ else if (Model.Images.Length > 1)
         </div>
     </div>
 }
+@if (Model.SpecialLink != null && Model.SpecialLink != "")
+{
+    <h2>
+        <a href="@(Model.SpecialLink.StartsWith("~/")?Url.Content("~/")+Model.SpecialLink.Remove(0,2):Model.SpecialLink)">Try it here!</a>
+    </h2>
+}
+@if (Model.SourceLink != null && Model.SourceLink != "")
+{
+    <h2>
+        <a href="@Model.SourceLink">Source Code here!</a>
+    </h2>
+}
 <h2>About:</h2>
 <p>@Html.Raw(Model.About)</p>
 <h2>What I Worked on:</h2>

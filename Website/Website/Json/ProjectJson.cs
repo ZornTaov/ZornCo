@@ -37,5 +37,9 @@ namespace Website.Json
         public string About;
         [JsonProperty("whatidid")]
         public string WhatIDid;
+        [JsonProperty("speciallink")]
+        public string SpecialLink;
+        [JsonProperty("sourcelink")]
+        public string SourceLink;
     }
 }
