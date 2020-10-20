@@ -68,6 +68,6 @@ else if (Model.Images.Length > 1)
     </div>
 }
 <h2>About:</h2>
-<p>@Model.About</p>
+<p>@Html.Raw(Model.About)</p>
 <h2>What I Worked on:</h2>
 <p>@Model.WhatIDid</p>

@@ -28,6 +28,16 @@ a {
   color: #0366d6;
 }
 
+.active-dropdown {
+    background-color: #00c669;
+    border-radius: 0.4rem;
+}
+
+.active-header {
+    background-color: #008446;
+    border-radius: 0.4rem;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
@@ -51,9 +61,9 @@ html {
   }
 }
 
-.border-top {
+/*.border-top {
   border-top: 1px solid #e5e5e5;
-}
+}*/
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -78,9 +88,16 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+span.round-bg {
+    background-color: rgba(255,255,255,0.8);
+    border-radius:0.4rem;
+    padding: .1rem .6rem;
+}
+
 .footer {
   position: absolute;
-  background: #eee;
+  /*background: #eee;*/
   bottom: 0;
   width: 100%;
   white-space: nowrap;

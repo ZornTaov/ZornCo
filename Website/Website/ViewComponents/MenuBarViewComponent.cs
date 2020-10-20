@@ -18,6 +18,7 @@ namespace Website.ViewComponents
         {
             this.p = p;
         }
+
         public IViewComponentResult Invoke()
         {
             //TODO: add image/youtube badges to nav-item
