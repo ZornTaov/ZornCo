@@ -24,4 +24,5 @@ Finally, re-deploy the new image:
 ```console
 docker create --name website -p 80:80 zornco-site:latest
 docker start website
+docker update --restart always website
 ```
