@@ -87,7 +87,8 @@
       "youtube": "",
       "semester": "FA 2019",
       "about": "Basic 3d pool game using Three.JS",
-      "whatidid": ""
+      "whatidid": "",
+      "speciallink": "~/Pool_Game.html"
     },
     {
       "id": "Zirc",
@@ -98,6 +99,16 @@
       "about": "Basic C#+Lua based IRC client.",
       "whatidid": ""
     }
-
+  ],
+  "dummy": [
+    {
+      "id": "",
+      "name": "",
+      "images": [ "" ],
+      "youtube": "",
+      "semester": "",
+      "about": "",
+      "whatidid": ""
+    }
   ]
 }

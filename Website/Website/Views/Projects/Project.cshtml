@@ -70,13 +70,13 @@ else if (Model.Images.Length > 1)
 @if (Model.SpecialLink != null && Model.SpecialLink != "")
 {
     <h2>
-        <a href="@(Model.SpecialLink.StartsWith("~/")?Url.Content("~/")+Model.SpecialLink.Remove(0,2):Model.SpecialLink)">Try it here!</a>
+        <a href="@(Model.SpecialLink.StartsWith("~/")?Url.Content("~/")+Model.SpecialLink.Remove(0,2):Model.SpecialLink)" target="_blank">Try it here!</a>
     </h2>
 }
 @if (Model.SourceLink != null && Model.SourceLink != "")
 {
     <h2>
-        <a href="@Model.SourceLink">Source Code here!</a>
+        <a href="@Model.SourceLink" target="_blank">Source Code here!</a>
     </h2>
 }
 <h2>About:</h2>
