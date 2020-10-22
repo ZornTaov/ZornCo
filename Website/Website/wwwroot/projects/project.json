@@ -25,9 +25,12 @@
   ],
   "unreal": [
     {
-      "id": "UnderMaintenance",
-      "name": "Under Maintenance",
-      "images": [ "projects/hands.png", "projects/Minigame 1.png" ],
+      "id": "LockoutTagout",
+      "name": "Lockout/Tagout: VR Simulator",
+      "images": [
+        "projects/lockouttagout/hands.png",
+        "projects/lockouttagout/Minigame 1.png"
+      ],
       "youtube": "KtvMWNtB8Pg",
       "semester": "FA 2018-SP 2019",
       "about": "This VR game was made for Stanford Childerens Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked on it together.",
@@ -38,11 +41,32 @@
     {
       "id": "Harmegeddon",
       "name": "Harmegeddon",
-      "images": [],
+      "images": [
+        "projects/harmageddon/harmageddoncharacterselect.png",
+        "projects/harmageddon/harmageddoningame1.png",
+        "projects/harmageddon/harmageddoningame2.png",
+        "projects/harmageddon/harmageddoningame3.png",
+        "projects/harmageddon/harmageddonmainmenu.png"
+      ],
       "youtube": "7vlruALvbsg",
       "semester": "SU 2020",
-      "about": "Arcade Battle Racing game",
+      "about": "Arcade Battle Racing game based on the Twisted Metal and Vigilante 8 series, mixed with Mad Max's Thunderdome.",
       "whatidid": "Engineer lead, directed others",
+      "speciallink": "",
+      "sourcelink": ""
+    },
+    {
+      "id": "GothicRescue",
+      "name": "Gothic Rescue",
+      "images": [
+        "projects/gothicrescue/gothicrescuemainmenu.png",
+        "projects/gothicrescue/gothicrescueingame1.png",
+        "projects/gothicrescue/gothicrescueingame2.png"
+      ],
+      "youtube": "",
+      "semester": "SP 2019",
+      "about": "This was a top down shooter based on extracting captured hostages in an enemy filled base.",
+      "whatidid": "I mainly worked on the event system and the enemy AI systems.",
       "speciallink": "",
       "sourcelink": ""
     }
@@ -51,7 +75,10 @@
     {
       "id": "HykkotaLauncher",
       "name": "Hykkota Launcher",
-      "images": [ "projects/hykkota-1.png", "projects/hykkota-2.png" ],
+      "images": [
+        "projects/hykkota-1.png",
+        "projects/hykkota-2.png"
+      ],
       "youtube": "",
       "semester": "2013",
       "about": "Custom Minecraft Launcher written in C#.",
@@ -82,7 +109,18 @@
     {
       "id": "MegaX",
       "name": " Megaman X Mod",
-      "images": [],
+      "images": [
+        "2013-12-27_00.31.55.png",
+        "2014-05-25_21.29.17.png",
+        "2014-07-04_03.43.52.png",
+        "2014-07-04_18.06.49.png",
+        "2014-08-29_00.52.30.png",
+        "2016-05-07_21.08.26.png",
+        "2016-06-30_02.02.06.png",
+        "CreeperMech.png",
+        "FloatingPlatform.gif",
+        "Progress_194.png"
+      ],
       "youtube": "",
       "semester": "2013",
       "about": "This mod was based on different aspects of the Megaman X series. Before discontinuing development of the mod, I was able to implement colorable armor and weapons, a buster that could be charged up and fired, a item stand, and a modular ride armor system.<br> <br> The ride armor system was the ",
@@ -95,22 +133,37 @@
     {
       "id": "PoolGame",
       "name": "Basic Pool Game",
-      "images": [ "projects/GnG Final Preview.png" ],
+      "images": [
+        "projects/GnG Final Preview.png"
+      ],
       "youtube": "",
       "semester": "FA 2019",
       "about": "Basic 3d pool game using Three.JS",
-      "whatidid": "",
+      "whatidid": "This was the final project for my Gui and Graphics class, and my personal challenge was to try and create the physics engine myself.  I based it off the equasion of two circular bodied colliding with each other, and expanded the code from there.",
       "speciallink": "~/Pool_Game.html",
       "sourcelink": ""
     },
     {
       "id": "Zirc",
       "name": "Zirc",
-      "images": [ "projects/Zirc.png" ],
+      "images": [
+        "projects/Zirc.png"
+      ],
       "youtube": "",
       "semester": "2015",
       "about": "Basic C#+Lua based IRC client.",
       "whatidid": "This project started as a challenge between myself and a friend.  The goal was to use the RFC for IRC clients and servers and we would each make one half of that pair.  This being the client side required creating various gui's and user interfaces, with cross threaded talk between each window.",
+      "speciallink": "",
+      "sourcelink": ""
+    },
+    {
+      "id": "TF2KitFabChecker",
+      "name": "TF2KitFabChecker",
+      "images": [ "projects/tf2kitfabchecker.png" ],
+      "youtube": "",
+      "semester": "2016",
+      "about": "This Java app searches through a given steam users inventory to figure out which Killstreak Kit Fabricators could be made given the existing robot parts in that users inventory.",
+      "whatidid": "",
       "speciallink": "",
       "sourcelink": ""
     }
