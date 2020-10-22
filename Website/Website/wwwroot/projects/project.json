@@ -154,7 +154,7 @@
       "about": "Basic C#+Lua based IRC client.",
       "whatidid": "This project started as a challenge between myself and a friend.  The goal was to use the RFC for IRC clients and servers and we would each make one half of that pair.  This being the client side required creating various gui's and user interfaces, with cross threaded talk between each window.",
       "speciallink": "",
-      "sourcelink": ""
+      "sourcelink": "https://github.com/ZornTaov/zirc/"
     },
     {
       "id": "TF2KitFabChecker",
@@ -165,7 +165,7 @@
       "about": "This Java app searches through a given steam users inventory to figure out which Killstreak Kit Fabricators could be made given the existing robot parts in that users inventory.",
       "whatidid": "",
       "speciallink": "",
-      "sourcelink": ""
+      "sourcelink": "https://github.com/ZornTaov/TF2KitFabChecker/"
     }
   ],
   "dummy": [
