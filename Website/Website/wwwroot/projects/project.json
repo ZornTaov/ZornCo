@@ -7,7 +7,9 @@
       "youtube": "PMZinsavqCE",
       "semester": "FA 2017",
       "about": "A game based around modular fighting robots made for the Game Design 2 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
-      "whatidid": "This is what I did."
+      "whatidid": "This is what I did.",
+      "speciallink": "",
+      "sourcelink": ""
     },
     {
       "id": "RuinedMazeRunner",
@@ -16,7 +18,9 @@
       "youtube": "dk0CzvgunWE",
       "semester": "FA 2017",
       "about": "A game based around a maze generator of my own design made for the Level Design 1 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
-      "whatidid": "This is what I did."
+      "whatidid": "This is what I did.",
+      "speciallink": "",
+      "sourcelink": ""
     }
   ],
   "unreal": [
@@ -27,7 +31,9 @@
       "youtube": "KtvMWNtB8Pg",
       "semester": "FA 2018-SP 2019",
       "about": "This VR game was made for Stanford Childerens Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked on it together.",
-      "whatidid": "I worked on it as an Engineer and I created most of the first Minigame and I worked on the movement and interaction systems."
+      "whatidid": "I worked on it as an Engineer and I created most of the first Minigame and I worked on the movement and interaction systems.",
+      "speciallink": "",
+      "sourcelink": ""
     },
     {
       "id": "Harmegeddon",
@@ -36,7 +42,9 @@
       "youtube": "7vlruALvbsg",
       "semester": "SU 2020",
       "about": "Arcade Battle Racing game",
-      "whatidid": "Engineer lead, directed others"
+      "whatidid": "Engineer lead, directed others",
+      "speciallink": "",
+      "sourcelink": ""
     }
   ],
   "minecraft": [
@@ -47,7 +55,9 @@
       "youtube": "",
       "semester": "2013",
       "about": "Custom Minecraft Launcher written in C#.",
-      "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft."
+      "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft.",
+      "speciallink": "",
+      "sourcelink": ""
     },
     {
       "id": "BedcraftandBeyond",
@@ -76,7 +86,9 @@
       "youtube": "",
       "semester": "2013",
       "about": "This mod was based on different aspects of the Megaman X series. Before discontinuing development of the mod, I was able to implement colorable armor and weapons, a buster that could be charged up and fired, a item stand, and a modular ride armor system.<br> <br> The ride armor system was the ",
-      "whatidid": ""
+      "whatidid": "",
+      "speciallink": "",
+      "sourcelink": ""
     }
   ],
   "other": [
@@ -88,7 +100,8 @@
       "semester": "FA 2019",
       "about": "Basic 3d pool game using Three.JS",
       "whatidid": "",
-      "speciallink": "~/Pool_Game.html"
+      "speciallink": "~/Pool_Game.html",
+      "sourcelink": ""
     },
     {
       "id": "Zirc",
@@ -97,7 +110,9 @@
       "youtube": "",
       "semester": "2015",
       "about": "Basic C#+Lua based IRC client.",
-      "whatidid": ""
+      "whatidid": "This project started as a challenge between myself and a friend.  The goal was to use the RFC for IRC clients and servers and we would each make one half of that pair.  This being the client side required creating various gui's and user interfaces, with cross threaded talk between each window.",
+      "speciallink": "",
+      "sourcelink": ""
     }
   ],
   "dummy": [
@@ -108,7 +123,9 @@
       "youtube": "",
       "semester": "",
       "about": "",
-      "whatidid": ""
+      "whatidid": "",
+      "speciallink": "",
+      "sourcelink": ""
     }
   ]
 }
