@@ -5,7 +5,7 @@
       "name": "Mecha Bash Battle",
       "images": [],
       "youtube": "PMZinsavqCE",
-      "semester": "FA 2017",
+      "year": "FA 2017",
       "about": "A game based around modular fighting robots made for the Game Design 2 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
       "whatidid": "This is what I did.",
       "speciallink": "",
@@ -16,7 +16,7 @@
       "name": "Ruined Maze Runner",
       "images": [],
       "youtube": "dk0CzvgunWE",
-      "semester": "FA 2017",
+      "year": "FA 2017",
       "about": "A game based around a maze generator of my own design made for the Level Design 1 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
       "whatidid": "This is what I did.",
       "speciallink": "",
@@ -32,7 +32,7 @@
         "projects/lockouttagout/Minigame 1.png"
       ],
       "youtube": "KtvMWNtB8Pg",
-      "semester": "FA 2018-SP 2019",
+      "year": "FA 2018-SP 2019",
       "about": "This VR game was made for Stanford Childerens Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked on it together.",
       "whatidid": "I worked on it as an Engineer and I created most of the first Minigame and I worked on the movement and interaction systems.",
       "speciallink": "",
@@ -49,7 +49,7 @@
         "projects/harmageddon/harmageddonmainmenu.png"
       ],
       "youtube": "7vlruALvbsg",
-      "semester": "SU 2020",
+      "year": "SU 2020",
       "about": "Arcade Battle Racing game based on the Twisted Metal and Vigilante 8 series, mixed with Mad Max's Thunderdome.",
       "whatidid": "Engineer lead, directed others",
       "speciallink": "",
@@ -64,7 +64,7 @@
         "projects/gothicrescue/gothicrescueingame2.png"
       ],
       "youtube": "",
-      "semester": "SP 2019",
+      "year": "SP 2019",
       "about": "This was a top down shooter based on extracting captured hostages in an enemy filled base.",
       "whatidid": "I mainly worked on the event system and the enemy AI systems.",
       "speciallink": "",
@@ -80,7 +80,7 @@
         "projects/hykkota-2.png"
       ],
       "youtube": "",
-      "semester": "2013",
+      "year": "2013",
       "about": "Custom Minecraft Launcher written in C#.",
       "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft.",
       "speciallink": "",
@@ -100,7 +100,7 @@
         "projects/bcb/suitcase_recipe.png"
       ],
       "youtube": "",
-      "semester": "2013",
+      "year": "2013",
       "about": "This mod introduced modular rugs that could go up and down the sides of slabs, stairs, and full blocks for a connected rug look.  Also included were beds that had three levels of customization: the sheets, the blanket, and the frame itself could be customized depending on materials and dyes used. Made deprecated with Minecraft 1.12 as both carpets and colored beds were in the vanilla game.",
       "whatidid": "",
       "speciallink": "https://www.curseforge.com/minecraft/mc-mods/bed-craft-and-beyond",
@@ -122,11 +122,11 @@
         "Progress_194.png"
       ],
       "youtube": "",
-      "semester": "2013",
+      "year": "2013",
       "about": "This mod was based on different aspects of the Megaman X series. Before discontinuing development of the mod, I was able to implement colorable armor and weapons, a buster that could be charged up and fired, a item stand, and a modular ride armor system.<br> <br> The ride armor system was the ",
       "whatidid": "",
       "speciallink": "",
-      "sourcelink": ""
+      "sourcelink": "https://github.com/ZornTaov/ReploidCraft"
     }
   ],
   "other": [
@@ -137,7 +137,7 @@
         "projects/GnG Final Preview.png"
       ],
       "youtube": "",
-      "semester": "FA 2019",
+      "year": "FA 2019",
       "about": "Basic 3d pool game using Three.JS",
       "whatidid": "This was the final project for my Gui and Graphics class, and my personal challenge was to try and create the physics engine myself.  I based it off the equasion of two circular bodied colliding with each other, and expanded the code from there.",
       "speciallink": "~/Pool_Game.html",
@@ -150,7 +150,7 @@
         "projects/Zirc.png"
       ],
       "youtube": "",
-      "semester": "2015",
+      "year": "2015",
       "about": "Basic C#+Lua based IRC client.",
       "whatidid": "This project started as a challenge between myself and a friend.  The goal was to use the RFC for IRC clients and servers and we would each make one half of that pair.  This being the client side required creating various gui's and user interfaces, with cross threaded talk between each window.",
       "speciallink": "",
@@ -161,7 +161,7 @@
       "name": "TF2KitFabChecker",
       "images": [ "projects/tf2kitfabchecker.png" ],
       "youtube": "",
-      "semester": "2016",
+      "year": "2016",
       "about": "This Java app searches through a given steam users inventory to figure out which Killstreak Kit Fabricators could be made given the existing robot parts in that users inventory.",
       "whatidid": "",
       "speciallink": "",
@@ -174,7 +174,7 @@
       "name": "",
       "images": [ "" ],
       "youtube": "",
-      "semester": "",
+      "year": "",
       "about": "",
       "whatidid": "",
       "speciallink": "",
