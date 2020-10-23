@@ -6,7 +6,7 @@
       "images": [],
       "youtube": "PMZinsavqCE",
       "year": "FA 2017",
-      "about": "A game based around modular fighting robots made for the Game Design 2 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
+      "about": "A game based around modular fighting robots made for the Game Design 2 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee Combat system.",
       "whatidid": "This is what I did.",
       "speciallink": "",
       "sourcelink": ""
@@ -33,8 +33,8 @@
       ],
       "youtube": "KtvMWNtB8Pg",
       "year": "FA 2018-SP 2019",
-      "about": "This VR game was made for Stanford Childerens Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked on it together.",
-      "whatidid": "I worked on it as an Engineer and I created most of the first Minigame and I worked on the movement and interaction systems.",
+      "about": "This VR game was made for Stanford Childerens Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked together towards making a game that simulated OSHA's Lockout Tagout procedure.  Players are directed to turn off each machine in the game, attach the provided lockout tagout lock, before playing the minigame for that machine in place of the actual maintanence of that machine, before unlocking and turning the machine back on.",
+      "whatidid": "I worked on it as an Engineer and I created most of the first Minigame and I worked on the movement and interaction systems. For the second semester I worked on this project, I was made Engineering Lead, and was tasked with finishing the last bits of the game, including the tutorial system and integrating all of the sound effects into the various user interactable objects.",
       "speciallink": "",
       "sourcelink": ""
     },
