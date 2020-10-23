@@ -51,7 +51,7 @@
       "youtube": "7vlruALvbsg",
       "year": "SU 2020",
       "about": "Arcade Battle Racing game based on the Twisted Metal and Vigilante 8 series, mixed with Mad Max's Thunderdome.",
-      "whatidid": "Engineer lead, directed others",
+      "whatidid": "As Engineer lead, I mainly directed the other engineers, giving out tasks for what each person was to work on each week.  This meant that each engineer had a section of the game they handled, such as one person managing the racing system, while another person handled the creation of the multiplayer lobby system.  I also had to teach the Unreal Engine 4 system to not only my engineers, but parts of the art and design teams as well, as this class was the first time that most of the class had ever worked in this system.",
       "speciallink": "",
       "sourcelink": ""
     },
@@ -66,7 +66,7 @@
       "youtube": "",
       "year": "SP 2019",
       "about": "This was a top down shooter based on extracting captured hostages in an enemy filled base.",
-      "whatidid": "I mainly worked on the event system and the enemy AI systems.",
+      "whatidid": "I mainly worked on the event system and the enemy AI systems. I was able to modularize the enemy units, allowing them to have different attack patterns and weapons available to use.",
       "speciallink": "",
       "sourcelink": ""
     }
@@ -82,7 +82,7 @@
       "youtube": "",
       "year": "2013",
       "about": "Custom Minecraft Launcher written in C#.",
-      "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft.",
+      "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft.  The library downloader consisted of querying Minecraft and Forge for the version JSON files for a given modpack's version, and parsing through each JSON to figure out what maven ready libraries needed to be downloaded.  After that and updating the selected pack from our server, the launcher then built the command line arguments to launch minecraft given the required libraries and paths needed.  Also included was a highly responsive logging console, as when we used the basic system console we found that the load times of modpacks were increased as the game had to wait for each logged string to be printed in the console.  By having this faster logger, our largest modpack's start time decreased by 7 minutes on average.",
       "speciallink": "",
       "sourcelink": ""
     },
@@ -123,7 +123,7 @@
       ],
       "youtube": "",
       "year": "2013",
-      "about": "This mod was based on different aspects of the Megaman X series. Before discontinuing development of the mod, I was able to implement colorable armor and weapons, a buster that could be charged up and fired, a item stand, and a modular ride armor system.<br> <br> The ride armor system was the ",
+      "about": "This mod was based on different aspects of the Megaman X series. Before discontinuing development of the mod, I was able to implement colorable armor and weapons, a buster that could be charged up and fired, an item stand, and a modular ride armor system.<br> <br> The ride armor system was the most complecated system I developed for this mod.  It included one main entity with multiple sub-entities for hit detection that made up the torso and limbs.  This allowed me to then swap out each limb with another version, allowing for the modularity.  I then implemented a multi block structure for a mech bay, allowing the player to create new ride armors and change out parts.",
       "whatidid": "",
       "speciallink": "",
       "sourcelink": "https://github.com/ZornTaov/ReploidCraft"
