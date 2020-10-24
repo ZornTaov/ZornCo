@@ -122,7 +122,7 @@
         "projects/hykkota-2.png"
       ],
       "youtube": "",
-      "year": "2013",
+      "year": "2016",
       "about": "Custom Minecraft Launcher written in C#.",
       "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft.  The library downloader consisted of querying Minecraft and Forge for the version JSON files for a given modpack's version, and parsing through each JSON to figure out what maven ready libraries needed to be downloaded.  After that and updating the selected pack from our server, the launcher then built the command line arguments to launch minecraft given the required libraries and paths needed.  Also included was a highly responsive logging console, as when we used the basic system console we found that the load times of modpacks were increased as the game had to wait for each logged string to be printed in the console.  By having this faster logger, our largest modpack's start time decreased by 7 minutes on average.",
       "speciallink": "",
