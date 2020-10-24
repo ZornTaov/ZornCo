@@ -7,7 +7,7 @@
       "youtube": "PMZinsavqCE",
       "year": "FA 2017",
       "about": "A game based around modular fighting robots made for the Game Design 2 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee Combat system.",
-      "whatidid": "This is what I did.",
+      "whatidid": "",
       "speciallink": "",
       "sourcelink": ""
     },
@@ -18,7 +18,7 @@
       "youtube": "dk0CzvgunWE",
       "year": "FA 2017",
       "about": "A game based around a maze generator of my own design made for the Level Design 1 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
-      "whatidid": "This is what I did.",
+      "whatidid": "",
       "speciallink": "",
       "sourcelink": ""
     }
@@ -33,8 +33,8 @@
       ],
       "youtube": "KtvMWNtB8Pg",
       "year": "FA 2018-SP 2019",
-      "about": "This VR game was made for Stanford Childerens Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked together towards making a game that simulated OSHA's Lockout Tagout procedure.  Players are directed to turn off each machine in the game, attach the provided lockout tagout lock, before playing the minigame for that machine in place of the actual maintanence of that machine, before unlocking and turning the machine back on.",
-      "whatidid": "I worked on it as an Engineer and I created most of the first Minigame and I worked on the movement and interaction systems. For the second semester I worked on this project, I was made Engineering Lead, and was tasked with finishing the last bits of the game, including the tutorial system and integrating all of the sound effects into the various user interactable objects.",
+      "about": "This VR game was made for Stanford Children's Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked together towards making a game that simulated OSHA's Lockout Tagout procedure.  Players are directed to turn off each machine in the game, attach the provided lockout tagout lock, before playing the minigame for that machine in place of the actual maintenance of that machine, before unlocking and turning the machine back on.",
+      "whatidid": "I worked on it as an Engineer and I created most of the first minigame and I worked on the movement and interaction systems. For the second semester I worked on this project, I was made Engineering Lead, and was tasked with finishing the last bits of the game, including the tutorial system and integrating all of the sound effects into the various user intractable objects.",
       "speciallink": "",
       "sourcelink": ""
     },
@@ -73,20 +73,6 @@
   ],
   "minecraft": [
     {
-      "id": "HykkotaLauncher",
-      "name": "Hykkota Launcher",
-      "images": [
-        "projects/hykkota-1.png",
-        "projects/hykkota-2.png"
-      ],
-      "youtube": "",
-      "year": "2013",
-      "about": "Custom Minecraft Launcher written in C#.",
-      "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft.  The library downloader consisted of querying Minecraft and Forge for the version JSON files for a given modpack's version, and parsing through each JSON to figure out what maven ready libraries needed to be downloaded.  After that and updating the selected pack from our server, the launcher then built the command line arguments to launch minecraft given the required libraries and paths needed.  Also included was a highly responsive logging console, as when we used the basic system console we found that the load times of modpacks were increased as the game had to wait for each logged string to be printed in the console.  By having this faster logger, our largest modpack's start time decreased by 7 minutes on average.",
-      "speciallink": "",
-      "sourcelink": ""
-    },
-    {
       "id": "BedcraftandBeyond",
       "name": "Bedcraft and Beyond",
       "images": [
@@ -123,10 +109,24 @@
       ],
       "youtube": "",
       "year": "2013",
-      "about": "This mod was based on different aspects of the Megaman X series. Before discontinuing development of the mod, I was able to implement colorable armor and weapons, a buster that could be charged up and fired, an item stand, and a modular ride armor system.<br> <br> The ride armor system was the most complecated system I developed for this mod.  It included one main entity with multiple sub-entities for hit detection that made up the torso and limbs.  This allowed me to then swap out each limb with another version, allowing for the modularity.  I then implemented a multi block structure for a mech bay, allowing the player to create new ride armors and change out parts.",
+      "about": "This mod was based on different aspects of the Megaman X series. Before discontinuing development of the mod, I was able to implement colorable armor and weapons, a buster that could be charged up and fired, an item stand, and a modular ride armor system.<br> <br> The ride armor system was the most complicated system I developed for this mod.  It included one main entity with multiple sub-entities for hit detection that made up the torso and limbs.  This allowed me to then swap out each limb with another version, allowing for the modularity.  I then implemented a multi block structure for a mech bay, allowing the player to create new ride armors and change out parts.",
       "whatidid": "",
       "speciallink": "",
       "sourcelink": "https://github.com/ZornTaov/ReploidCraft"
+    },
+    {
+      "id": "HykkotaLauncher",
+      "name": "Hykkota Launcher",
+      "images": [
+        "projects/hykkota-1.png",
+        "projects/hykkota-2.png"
+      ],
+      "youtube": "",
+      "year": "2013",
+      "about": "Custom Minecraft Launcher written in C#.",
+      "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft.  The library downloader consisted of querying Minecraft and Forge for the version JSON files for a given modpack's version, and parsing through each JSON to figure out what maven ready libraries needed to be downloaded.  After that and updating the selected pack from our server, the launcher then built the command line arguments to launch minecraft given the required libraries and paths needed.  Also included was a highly responsive logging console, as when we used the basic system console we found that the load times of modpacks were increased as the game had to wait for each logged string to be printed in the console.  By having this faster logger, our largest modpack's start time decreased by 7 minutes on average.",
+      "speciallink": "",
+      "sourcelink": ""
     }
   ],
   "other": [
@@ -139,7 +139,7 @@
       "youtube": "",
       "year": "FA 2019",
       "about": "Basic 3d pool game using Three.JS",
-      "whatidid": "This was the final project for my Gui and Graphics class, and my personal challenge was to try and create the physics engine myself.  I based it off the equasion of two circular bodied colliding with each other, and expanded the code from there.",
+      "whatidid": "This was the final project for my Gui and Graphics class, and my personal challenge was to try and create the physics engine myself.  I based it off the equation of two circular bodied colliding with each other, and expanded the code from there.",
       "speciallink": "~/Pool_Game.html",
       "sourcelink": ""
     },
