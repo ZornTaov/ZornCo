@@ -12,7 +12,10 @@ Stop and remove the running website image:
 ```console
 docker-compose down
 ```
-
+Then rebuild the latest image for the website:
+```console
+docker-compose build
+```
 Re-deploy the new image:
 ```console
 docker-compose up -d
