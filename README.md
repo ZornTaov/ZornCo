@@ -10,19 +10,10 @@ git pull
 
 Stop and remove the running website image:
 ```console
-docker container stop website
-docker container rm website
+docker-compose down
 ```
 
-Then rebuild the latest image for the website:
-
+Re-deploy the new image:
 ```console
-docker-compose build
-```
-
-Finally, re-deploy the new image:
-```console
-docker create --name website -p 80:80 zornco-site:latest
-docker start website
-docker update --restart always website
+docker-compose up -d
 ```
