@@ -1,7 +1,5 @@
 #!/bin/bash
 git pull
-docker container stop website
-docker container rm website
-docker-compose build
-docker create --restart always --name website -p 80:80 zornco-site:latest
-docker start website
+docker-compose stop
+docker container rm site-git_web_1 site-git_proxy_1
+docker-compose up -d
