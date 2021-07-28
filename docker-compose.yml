@@ -1,10 +1,5 @@
 version: "3.8"
 services:
-  web:
-    build: Website
-    image: zornco-site
-    expose:
-      - "5000"
   proxy:
     build:
       context: ./nginx
@@ -17,3 +12,8 @@ services:
       - /etc/letsencrypt/:/etc/letsencrypt/
     links:
       - web
+  web:
+    build: Website
+    image: zornco-site
+    expose:
+      - "5000"
