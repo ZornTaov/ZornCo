@@ -1,0 +1,39 @@
+﻿@inject NavigationManager Nav
+@inject ProjectService Projects
+@using ZornCoGHIO.Pages
+
+@if (Model == null)
+{
+    <p>Navbar Loading.</p>
+}
+else
+{
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-header border-bottom box-shadow mb-3">
+        <div class="container">
+            @*<a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">ZornCo</a>*@
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav flex-grow-1">
+                    <NavLink class="nav-link text-light" href="/" Match="NavLinkMatch.All">Home</NavLink>
+                    @*<a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>*@
+                    <ProjectsTab title="Unity" projects=Model.Unity></ProjectsTab>
+                    <ProjectsTab title="Unreal" projects=Model.Unreal></ProjectsTab>
+                    <ProjectsTab title="Minecraft" projects=Model.Minecraft></ProjectsTab>
+                    <ProjectsTab title="Other" projects=Model.Other></ProjectsTab>
+                </ul>
+            </div>
+        </div>
+    </nav>
+}
+
+@code {
+    public Website.Json.Projects? Model { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        Model = await Projects?.AllProjects();
+    }
+
+}

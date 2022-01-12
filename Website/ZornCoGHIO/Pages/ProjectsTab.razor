@@ -1,0 +1,60 @@
+﻿@inject NavigationManager Nav
+
+@if (projects == null)
+{
+    <h1>Page Loading.</h1>
+}
+else
+{
+    <li class="@GetDropdown()">
+        <a class="dropdown-toggle nav-link text-light" data-toggle="dropdown" href="#">@title<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            @foreach (var item in projects)
+            {
+                <NavLink class="@GetNavLink(item.Id)" href="@GetProjectUrl(item)">@item.Name</NavLink>
+            }
+        </ul>
+    </li>
+}
+@code {
+    [Parameter]
+    public string title { get; set; }
+    [Parameter]
+    public Website.Json.Project[]? projects { get; set; }
+    string GetProjectUrl(Website.Json.Project pro)
+    {
+        return "/Projects/" + title + "/" + pro.Id;
+    }
+    string GetDropdown()
+    {
+        List<String> strings = new List<string>();
+        strings.Add("dropdown");
+        if (Nav.ToBaseRelativePath(Nav.Uri).StartsWith("Projects/" + title))
+        {
+            strings.Add("active-header");
+        }
+        return String.Join(" ", strings);
+    }
+    string GetNavLink(string id)
+    {
+        List<String> strings = new List<string>();
+        strings.Add("nav-link text-dark");
+        if (Nav.ToBaseRelativePath(Nav.Uri).StartsWith("Projects/" + title + "/" + id))
+        {
+            strings.Add("active-project");
+        }
+        return String.Join(" ", strings);
+    }
+    void HandleLocationChanged(object sender, LocationChangedEventArgs args)
+    {
+        StateHasChanged();
+    }
+    protected override void OnInitialized()
+    {
+        Nav.LocationChanged += HandleLocationChanged;
+    }
+    public void Dispose()
+    {
+        Nav.LocationChanged -= HandleLocationChanged;
+    }
+}

@@ -1,0 +1,150 @@
+﻿@inject NavigationManager Nav
+@inject ProjectService Projects 
+
+@page "/projects/{type}/{id}"
+<PageTitle Title="@GetTitle()" />
+@if (Model == null)
+{
+    <h1>Project Not Found!</h1>
+}
+else
+{
+<h1>Viewing Project: @Model.Name</h1>
+<h3>Created: @Model.Year</h3>
+@if (Model.Youtube != null && Model.Youtube != "")
+{
+    <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/@Model.Youtube"
+                allow="autoplay; encrypted-media" allowfullscreen style="height: 20em; width:100%"></iframe>
+    </div>
+}
+
+@if (Model.Images.Length == 1)
+{
+    <h2>Images:</h2>
+    <div class="container" style="background:#333">
+        <div style="display:flex; justify-content:center">
+            <a href="/@Model.Images[0]" data-toggle="lightbox">
+                <img src="/@Model.Images[0]" alt="@Model.Images[0].Replace(".png", "")" class="d-block img-fluid" />
+            </a>
+        </div>
+    </div>
+
+}
+else if (Model.Images.Length > 1)
+{
+    <h2>Images:</h2>
+    <div class="container" style="background:#333">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                @for (int i = 0; i < Model.Images.Length; i++)
+                {
+                    @if (i == 0)
+                    {
+                        <li data-target="#myCarousel" data-slide-to="@i" class="active"></li>
+                    }
+                    else
+                    {
+                        <li data-target="#myCarousel" data-slide-to="@i"></li>
+                    }
+                }
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                @for (int i = 0; i < Model.Images.Length; i++)
+                {
+                    <div class="@(i == 0 ? "carousel-item active" : "carousel-item")">
+                        <div style="display:flex; justify-content:center">
+                            <a href="/@Model.Images[i]" data-toggle="lightbox">
+                                <img src="/@Model.Images[i]" alt="@Model.Images[i].Replace(".png", "")" style="height: 20em;" class="d-block img-fluid" />
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+}
+@if (Model.SpecialLink != null && Model.SpecialLink != "")
+{
+    <h2>
+        <a href="@tryit()" target="_blank">Try it here!</a>
+    </h2>
+}
+@if (Model.SourceLink != null && Model.SourceLink != "")
+{
+    <h2>
+        <a href="@Model.SourceLink" target="_blank">Source Code here!</a>
+    </h2>
+}
+@if (Model.About != null && Model.About != "")
+{
+    <h2>About:</h2>
+    <p>@Model.About</p>
+}
+@if (Model.WhatIDid != null && Model.WhatIDid != "")
+{
+    <h2>What I Worked on:</h2>
+    <p>@Model.WhatIDid</p>
+}
+
+}
+
+@code { 
+    [Parameter]
+    public string Type { get; set; }
+    [Parameter]
+    public string Id { get; set; }
+    private void GetProjectView(Website.Json.Project[] projects, string id)
+    {
+        var project = (from f in projects where f.Id == id select f).FirstOrDefault();
+        if (project == null)
+        {
+            //TODO: Redirect to "project not found" page
+            this.Model = null;
+            return;
+        }
+        this.Model = project;
+    }
+    protected override async Task OnParametersSetAsync()
+    {
+        var projects = await Projects?.AllProjects();
+        switch (Type.ToLower())
+        {
+            case "unreal":
+                GetProjectView(projects.Unreal, Id);
+                break;
+            case "unity":
+                GetProjectView(projects.Unity, Id);
+                break;
+            case "minecraft":
+                GetProjectView(projects.Minecraft, Id);
+                break;
+            case "other":
+                GetProjectView(projects.Other, Id);
+                break;
+            default:
+                break;
+        }
+    }
+    public string GetTitle()
+    {
+        string title = " - Brian Hoem's Portfolio";
+        return Type + " - " + Id + title;
+    }
+    public Website.Json.Project? Model { get; set; }
+    public string tryit()
+    {
+        string toTry = Model.SpecialLink.StartsWith("/") ? Nav.ToAbsoluteUri(Model.SpecialLink.Remove(0, 1)).ToString() : Model.SpecialLink;
+        Console.WriteLine(toTry);
+        return toTry;
+    }
+}
