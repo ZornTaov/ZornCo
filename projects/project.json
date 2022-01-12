@@ -1,0 +1,184 @@
+{
+  "unity": [
+    {
+      "id": "MechaBashBattle",
+      "name": "Mecha Bash Battle",
+      "images": [],
+      "youtube": "PMZinsavqCE",
+      "year": "FA 2017",
+      "about": "A game based around modular fighting robots made for the Game Design 2 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee Combat system.",
+      "whatidid": "",
+      "speciallink": "",
+      "sourcelink": ""
+    },
+    {
+      "id": "RuinedMazeRunner",
+      "name": "Ruined Maze Runner",
+      "images": [],
+      "youtube": "dk0CzvgunWE",
+      "year": "FA 2017",
+      "about": "A game based around a maze generator of my own design made for the Level Design 1 class at Cogswell Polytechnical College.  Made in Unity and C# using the Invector Melee system.",
+      "whatidid": "",
+      "speciallink": "",
+      "sourcelink": ""
+    }
+  ],
+  "unreal": [
+    {
+      "id": "LockoutTagout",
+      "name": "Lockout/Tagout: VR Simulator",
+      "images": [
+        "projects/lockouttagout/hands.png",
+        "projects/lockouttagout/Minigame 1.png"
+      ],
+      "youtube": "KtvMWNtB8Pg",
+      "year": "FA 2018-SP 2019",
+      "about": "This VR game was made for Stanford Children's Hospital during Game Studio 1 at Cogswell Polytechnical College where the entire class worked together towards making a game that simulated OSHA's Lockout Tagout procedure.  Players are directed to turn off each machine in the game, attach the provided lockout tagout lock, before playing the minigame for that machine in place of the actual maintenance of that machine, before unlocking and turning the machine back on.",
+      "whatidid": "I worked on it as an Engineer and I created most of the first minigame and I worked on the movement and interaction systems. For the second semester I worked on this project, I was made Engineering Lead, and was tasked with finishing the last bits of the game, including the tutorial system and integrating all of the sound effects into the various user intractable objects.",
+      "speciallink": "",
+      "sourcelink": ""
+    },
+    {
+      "id": "Harmegeddon",
+      "name": "Harmegeddon",
+      "images": [
+        "projects/harmageddon/harmageddoncharacterselect.png",
+        "projects/harmageddon/harmageddoningame1.png",
+        "projects/harmageddon/harmageddoningame2.png",
+        "projects/harmageddon/harmageddoningame3.png",
+        "projects/harmageddon/harmageddonmainmenu.png"
+      ],
+      "youtube": "7vlruALvbsg",
+      "year": "SU 2020",
+      "about": "Arcade Battle Racing game based on the Twisted Metal and Vigilante 8 series, mixed with Mad Max's Thunderdome.",
+      "whatidid": "As Engineer lead, I mainly directed the other engineers, giving out tasks for what each person was to work on each week.  This meant that each engineer had a section of the game they handled, such as one person managing the racing system, while another person handled the creation of the multiplayer lobby system.  I also had to teach the Unreal Engine 4 system to not only my engineers, but parts of the art and design teams as well, as this class was the first time that most of the class had ever worked in this system.",
+      "speciallink": "",
+      "sourcelink": ""
+    },
+    {
+      "id": "GothicRescue",
+      "name": "Gothic Rescue",
+      "images": [
+        "projects/gothicrescue/gothicrescuemainmenu.png",
+        "projects/gothicrescue/gothicrescueingame1.png",
+        "projects/gothicrescue/gothicrescueingame2.png"
+      ],
+      "youtube": "",
+      "year": "SP 2019",
+      "about": "This was a top down shooter based on extracting captured hostages in an enemy filled base.",
+      "whatidid": "I mainly worked on the event system and the enemy AI systems. I was able to modularize the enemy units, allowing them to have different attack patterns and weapons available to use.",
+      "speciallink": "",
+      "sourcelink": ""
+    }
+  ],
+  "minecraft": [
+    {
+      "id": "BedcraftandBeyond",
+      "name": "Bedcraft and Beyond",
+      "images": [
+        "projects/bcb/BCB.png",
+        "projects/bcb/BCB_Types.png",
+        "projects/bcb/beds_underside.png",
+        "projects/bcb/RainbowBeds.gif",
+        "projects/bcb/StoneBed.png",
+        "projects/bcb/rugs_variations.png",
+        "projects/bcb/Suitcase.jpg",
+        "projects/bcb/suitcase_recipe.png"
+      ],
+      "youtube": "",
+      "year": "2013",
+      "about": "This mod introduced modular rugs that could go up and down the sides of slabs, stairs, and full blocks for a connected rug look.  Also included were beds that had three levels of customization: the sheets, the blanket, and the frame itself could be customized depending on materials and dyes used. Made deprecated with Minecraft 1.12 as both carpets and colored beds were in the vanilla game.",
+      "whatidid": "",
+      "speciallink": "https://www.curseforge.com/minecraft/mc-mods/bed-craft-and-beyond",
+      "sourcelink": "https://github.com/ZornTaov/BedcraftAndBeyond"
+    },
+    {
+      "id": "MegaX",
+      "name": " Megaman X Mod",
+      "images": [
+        "projects/megax/2013-12-27_00.31.55.png",
+        "projects/megax/2014-05-25_21.29.17.png",
+        "projects/megax/2014-07-04_03.43.52.png",
+        "projects/megax/2014-07-04_18.06.49.png",
+        "projects/megax/2014-08-29_00.52.30.png",
+        "projects/megax/2016-05-07_21.08.26.png",
+        "projects/megax/2016-06-30_02.02.06.png",
+        "projects/megax/CreeperMech.png",
+        "projects/megax/FloatingPlatform.gif",
+        "projects/megax/Progress_194.png"
+      ],
+      "youtube": "",
+      "year": "2013",
+      "about": "This mod was based on different aspects of the Megaman X series. Before discontinuing development of the mod, I was able to implement colorable armor and weapons, a buster that could be charged up and fired, an item stand, and a modular ride armor system.<br> <br> The ride armor system was the most complicated system I developed for this mod.  It included one main entity with multiple sub-entities for hit detection that made up the torso and limbs.  This allowed me to then swap out each limb with another version, allowing for the modularity.  I then implemented a multi block structure for a mech bay, allowing the player to create new ride armors and change out parts.",
+      "whatidid": "",
+      "speciallink": "",
+      "sourcelink": "https://github.com/ZornTaov/ReploidCraft"
+    },
+    {
+      "id": "HykkotaLauncher",
+      "name": "Hykkota Launcher",
+      "images": [
+        "projects/hykkota-1.png",
+        "projects/hykkota-2.png"
+      ],
+      "youtube": "",
+      "year": "2016",
+      "about": "Custom Minecraft Launcher written in C#.",
+      "whatidid": "Lead programmer, implementing the library downloader and actual launching of minecraft.  The library downloader consisted of querying Minecraft and Forge for the version JSON files for a given modpack's version, and parsing through each JSON to figure out what maven ready libraries needed to be downloaded.  After that and updating the selected pack from our server, the launcher then built the command line arguments to launch minecraft given the required libraries and paths needed.  Also included was a highly responsive logging console, as when we used the basic system console we found that the load times of modpacks were increased as the game had to wait for each logged string to be printed in the console.  By having this faster logger, our largest modpack's start time decreased by 7 minutes on average.",
+      "speciallink": "",
+      "sourcelink": ""
+    }
+  ],
+  "other": [
+    {
+      "id": "PoolGame",
+      "name": "Basic Pool Game",
+      "images": [
+        "projects/GnG Final Preview.png"
+      ],
+      "youtube": "",
+      "year": "FA 2019",
+      "about": "Basic 3d pool game using Three.JS",
+      "whatidid": "This was the final project for my Gui and Graphics class, and my personal challenge was to try and create the physics engine myself.  I based it off the equation of two circular bodied colliding with each other, and expanded the code from there.",
+      "speciallink": "/Pool_Game.html",
+      "sourcelink": ""
+    },
+    {
+      "id": "Zirc",
+      "name": "Zirc",
+      "images": [
+        "projects/Zirc.png"
+      ],
+      "youtube": "",
+      "year": "2015",
+      "about": "Basic C#+Lua based IRC client.",
+      "whatidid": "This project started as a challenge between myself and a friend.  The goal was to use the RFC for IRC clients and servers and we would each make one half of that pair.  This being the client side required creating various gui's and user interfaces, with cross threaded talk between each window.",
+      "speciallink": "",
+      "sourcelink": "https://github.com/ZornTaov/zirc/"
+    },
+    {
+      "id": "TF2KitFabChecker",
+      "name": "TF2KitFabChecker",
+      "images": [ "projects/tf2kitfabchecker.png" ],
+      "youtube": "",
+      "year": "2016",
+      "about": "This Java app searches through a given steam users inventory to figure out which Killstreak Kit Fabricators could be made given the existing robot parts in that users inventory.",
+      "whatidid": "",
+      "speciallink": "",
+      "sourcelink": "https://github.com/ZornTaov/TF2KitFabChecker/"
+    }
+  ],
+  "dummy": [
+    {
+      "id": "",
+      "name": "",
+      "images": [ "" ],
+      "youtube": "",
+      "year": "",
+      "about": "",
+      "whatidid": "",
+      "speciallink": "",
+      "sourcelink": ""
+    }
+  ]
+}

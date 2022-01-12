@@ -1,0 +1,46 @@
+﻿body {
+    margin: 0px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+canvas {
+    display: block; /* fix necessary to remove space at bottom of canvas */
+}
+
+#text {
+    background-color: #FFFFFF;
+    visibility: hidden;
+    position: absolute;
+    left: 90px;
+}
+
+#loading {
+    background-color: rgba(255, 255, 255, 0.0);
+    color: #FFFFFF;
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#Score1 {
+    background-color: rgba(255, 255, 255, 0.0);
+    color: #FFFFFF;
+    font-size: 150%;
+    position: absolute;
+    bottom: 5%;
+    left: 33%;
+    transform: translateX(-50%)
+}
+
+#Score2 {
+    background-color: rgba(255, 255, 255, 0.0);
+    color: #FFFFFF;
+    font-size: 150%;
+    position: absolute;
+    bottom: 5%;
+    left: 66%;
+    transform: translateX(-50%)
+}
