@@ -24,8 +24,8 @@ else
     <h2>Images:</h2>
     <div class="container" style="background:#333">
         <div style="display:flex; justify-content:center">
-            <a href="/@Model.Images[0]" data-toggle="lightbox">
-                <img src="/@Model.Images[0]" alt="@Model.Images[0].Replace(".png", "")" class="d-block img-fluid" />
+            <a href="@Model.Images[0]" data-toggle="lightbox">
+                <img src="@Model.Images[0]" alt="@Model.Images[0].Replace(".png", "")" class="d-block img-fluid" />
             </a>
         </div>
     </div>
@@ -56,8 +56,8 @@ else if (Model.Images.Length > 1)
                 {
                     <div class="@(i == 0 ? "carousel-item active" : "carousel-item")">
                         <div style="display:flex; justify-content:center">
-                            <a href="/@Model.Images[i]" data-toggle="lightbox">
-                                <img src="/@Model.Images[i]" alt="@Model.Images[i].Replace(".png", "")" style="height: 20em;" class="d-block img-fluid" />
+                            <a href="@Model.Images[i]" data-toggle="lightbox">
+                                <img src="@Model.Images[i]" alt="@Model.Images[i].Replace(".png", "")" style="height: 20em;" class="d-block img-fluid" />
                             </a>
                         </div>
                     </div>

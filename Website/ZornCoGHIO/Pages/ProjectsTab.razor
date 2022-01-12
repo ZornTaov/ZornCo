@@ -23,7 +23,7 @@ else
     public Website.Json.Project[]? projects { get; set; }
     string GetProjectUrl(Website.Json.Project pro)
     {
-        return "/Projects/" + title + "/" + pro.Id;
+        return "Projects/" + title + "/" + pro.Id;
     }
     string GetDropdown()
     {

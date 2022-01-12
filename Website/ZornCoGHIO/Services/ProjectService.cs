@@ -26,7 +26,7 @@ namespace ZornCoGHIO.Services
         }
         public async Task LoadProjects()
         {
-            var task = await client.GetStringAsync("/projects/project.json");
+            var task = await client.GetStringAsync("projects/project.json");
             Projects projects = JsonConvert.DeserializeObject<Projects>(task);
             this.projects = projects;
         }
